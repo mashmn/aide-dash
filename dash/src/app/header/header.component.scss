@@ -1,0 +1,110 @@
+@import "variables";
+
+.page-header {
+    /*Absolutely positioned header*/
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // height: 100%;
+    /*Absolutely positioned header ends*/
+
+    /* Not absolutely positioned header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /* Not absolutely positioned header ends*/
+
+    padding-top: 20px;
+    width: $page-header-width;
+    color: $page-header-txtColor;
+    background: $page-header-bgColor;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+
+        .logo {
+            display: block;
+            max-width: 120px;
+            margin: 0 15px;
+        }
+
+        .toggle-mob-menu {
+            display: none;
+            margin-left: 5px;
+            padding: 4px;
+            background: $main-page-content-blockColor;
+            border-radius: $border-radius;
+
+            svg {
+                fill: $black;
+                transition: transform 0.2s;
+            }
+        }
+
+        .admin-menu {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-top: 35px;
+
+            li:nth-last-child(2) {
+                margin-bottom: 35px;
+            }
+
+            li:last-child {
+                margin-top: auto;
+                margin-bottom: 20px;
+            }
+
+            li > * {
+                width: 100%;
+                padding: 12px 15px;
+            }
+
+            a, button {
+                display: flex;
+                align-items: center;
+                font-size: 0.9rem;
+                transition: background 0.2s, color 0.2s;
+            }
+
+            .menu-heading h3 {
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                font-size: 12px;
+                margin-top: 12px;
+                color: $page-header-headingColor;
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: $page-header-txtColor;
+                margin-right: 10px;
+                transition: fill 0.2s;
+            }
+
+            a:hover,
+            a:focus,
+            button:hover,
+            button:focus {
+                background: $page-header-bgColor-hover;
+                color: $red;
+                outline: none;
+            }
+
+            a:hover svg,
+            a:focus svg,
+            button:hover svg,
+            button:focus svg {
+                fill: $red;
+            }
+        }   
+        
+    }
+}

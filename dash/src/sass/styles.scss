@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import './variables';
+@import './mixins';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+button {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    cursor: pointer;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+button,
+input {
+    border: none;
+}
+
+svg {
+    display: block;
+}
+
+body {
+    font: 16px/1.5 "Lato", sans-serif;
+}
