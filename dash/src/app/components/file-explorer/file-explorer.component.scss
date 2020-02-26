@@ -1,0 +1,50 @@
+@import 'variables';
+
+.file-explorer-wrapper {
+    position: relative;
+    left: $page-header-width;
+    width: calc(100% - #{$page-header-width});
+    min-height: 100vh;
+    padding: 30px;
+    color: $main-page-content-txtColor;
+    background: $main-page-content-bgColor;
+
+    .file-explorer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+
+        > article {
+            display: flex;
+            background: $main-page-content-blockColor;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            grid-column: 1 / -1;
+
+            // > * {
+            //     padding-top: 15px;
+            //     padding-left: 15px;
+            // }
+        }
+
+        &-upload {
+            height: 60px;
+        }
+
+        // .component-header > h3 {
+        //     padding-top: 15px;
+        //     padding-left: 15px;
+        // }
+
+        &-manager {
+            height: 600px;
+
+            // & > ul {
+            //     padding-top: 15px;
+            //     padding-left: 15px;
+            // }
+
+        }
+    }
+}
+

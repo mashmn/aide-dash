@@ -1,0 +1,32 @@
+.add-files-btn {
+    float: right;
+}
+
+:host {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.actions {
+    justify-content: flex-end;
+}
+
+.container {
+    height: 100%;
+}
+
+/* .mat-panel-title {
+    position: absolute;
+    width: 70%;
+} */
+
+/* .mat-panel-description {
+    position: fixed;
+    width: 30%;
+} */
+
+.mat-progress-bar {
+    margin-top: 30px;
+}

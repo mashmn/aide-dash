@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import './variables';
 @import './mixins';
@@ -42,4 +43,31 @@ svg {
 
 body {
     font: 16px/1.5 "Lato", sans-serif;
+}
+
+/* Custom Header - Add "component-padding" to the inner section wraps the article elements not the wrapper section */
+// .component-padding > article > * {
+//     padding: 15px;
+// }
+.page-title {
+    padding: 15px;
+}
+
+/* Custom Button */
+.custom-button {
+    display: inline-block;
+    height: 30px;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s;
+    font-weight: bold;
+    margin: 15px;
+    padding: 3px 10px;
+
+    &:hover,
+    &:focus {
+        background: $page-header-bgColor-hover;
+        color: $red;
+        outline: none;
+    }
 }

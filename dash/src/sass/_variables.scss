@@ -1,16 +1,25 @@
+/* Navigation - Page Header */
 // $page-header-bgColor: #242e42;
-$page-header-bgColor: #422430;
+$page-header-bgColor: #492c38;
 // $page-header-bgColor-hover: #1d2636;
 $page-header-bgColor-hover: #38222b;
-$page-header-txtColor: #dde9f8;
+// $page-header-txtColor: #dde9f8;
+$page-header-txtColor: #f6f8fa;
 $page-header-headingColor: #7889a4;
 $page-header-width: 200px;
+
+/* Main page color variables */
 $main-page-content-bgColor: #f0f1f6;
 $main-page-content-txtColor: #171616;
-$main-page-content-blockColor: #fff;
+// $main-page-content-blockColor: #fff;
+$main-page-content-blockColor: rgb(250, 241, 241);
 $white: #fff;
 $black: #333;
 $blue: #00b9eb;
-$red: #bf0a54;
+// $red: #bf0a54;
+$red: rgb(216, 110, 110);
 $border-radius: 4px;
 $box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
+
+/* Custom button variables */
+$custom-button-bgColor-hover: $page-header-bgColor-hover;
